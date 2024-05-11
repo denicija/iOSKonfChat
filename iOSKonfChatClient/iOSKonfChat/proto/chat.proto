@@ -1,0 +1,15 @@
+syntax = "proto3";
+import "attendee.proto";
+
+message ChatMessage {
+    Attendee attendee = 1;
+    string textMessage = 2;
+}
+
+service ChatRoom {
+    // Sends a message
+    rpc addMessage (ChatMessage) returns (ChatMessage) {}
+    rpc connect (stream ChatMessage) returns (stream ChatMessage) {}
+    //  // Receives messages
+    //  rpc allMessages (google.protobuf.Empty) returns (stream ChatMessage) {}
+}

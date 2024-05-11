@@ -1,0 +1,18 @@
+{
+    "protocPath": "/opt/homebrew/bin/protoc"
+    "invocations": [
+        {
+            "protoFiles": [
+                "attendee.proto",
+            ],
+            "visibility": "internal"
+        },
+        {
+            "protoFiles": [
+                "chat.proto"
+            ],
+            "visibility": "public",
+            "client": true
+        }
+    ]
+}
