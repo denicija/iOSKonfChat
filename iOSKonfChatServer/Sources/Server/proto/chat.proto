@@ -1,0 +1,13 @@
+syntax = "proto3";
+import "attendee.proto";
+
+message ChatMessage {
+  Attendee attendee = 1;
+  string textMessage = 2;
+}
+
+service ChatRoom {
+  // Connect to send and receive messages
+  rpc connect (stream ChatMessage) returns (stream ChatMessage) {}
+
+}

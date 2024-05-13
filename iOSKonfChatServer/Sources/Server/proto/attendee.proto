@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message Attendee {
+  string name = 1;
+  string email = 2;
+  string phone_number = 3;
+  bytes photo = 4;
+  repeated string food_preferences = 5;
+  repeated string allergies = 6;
+  enum AttendeeType {
+    ATTENDEE = 0;
+    SPEAKER = 1;
+    ORGANIZER = 2;
+  }
+  AttendeeType attendee_type = 7;
+}
+
