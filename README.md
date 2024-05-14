@@ -8,18 +8,24 @@ This repository contains server and client implementation for the demo chat room
 
 
 ### Server
-To start the server, open the iOSKonfChatServer project in xCode 
+To start the server, open the iOSKonfChatServer project in Xcode 
 ```
 xed  iOSKonfChatServer/
 ```
 ℹ️ The project contains all the code generated files in the /proto folder.
 
-From xcode build and run the project.
+From Xcode build and run the project.
 Upon succseful run, the server will run on `localhost:1234`
 
 ### Client
 To start the client application, open the iOSKonfChatClient project in Xcode.
-Build and run the application.
+```
+xed  iOSKonfChatClient/
+```
 
 ℹ️ The project contains all the code generated files in the /proto folder.
+
+Build and run the application.
+
+
 
